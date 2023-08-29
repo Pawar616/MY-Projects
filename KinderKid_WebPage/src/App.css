@@ -1,0 +1,71 @@
+.kklogo{
+  font-size: 50px;
+}
+.play{
+  padding: 30px;
+}
+.music{
+  padding: 30px;
+}
+.art{
+  padding: 30px;
+}
+.transp{
+  padding: 30px;
+}
+.food{
+  padding: 30px;
+}
+.tour{
+  padding: 30px;
+}
+.select_class{
+  height: 47px;
+}
+.imgover{
+  border-radius: 100%;
+}
+.btn_social{
+  width: 38px; 
+  height: 38px;
+}
+.testi{
+  width: 70px;
+  height: 70px;
+}
+.teacher{
+  width: 380px;
+}
+.transition{
+  transition: all 2s ease 0s; width: 3800px;
+  transform: translate3d(-1900px, 0px, 0px);
+}
+.fnav{
+  font-size: 40px; 
+  line-height: 40px;
+}
+.fcopy{
+  border-top: 1px solid rgba(23, 162, 184, 0.2) ;
+}
+.fbtn{
+  width: 38px; 
+  height: 38px;
+}
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}
+*{
+  overflow-x: hidden;
+}
