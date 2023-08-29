@@ -1,0 +1,83 @@
+body{
+    /* background-color: aqua; */
+}
+.task-box{
+    height: 25rem;
+    width: 30%;
+    margin: 1.2rem;
+}
+.task-box ul {
+    height: 20.5rem;
+    width: 97%;
+    
+}
+.strick{
+    color: brown;
+    text-decoration: line-through;
+}
+.container-list{
+    /* margin-right: auto; */
+    margin-left: 10rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+.add-task{
+    background-color: aqua;
+    border: none;
+    height: 40px;
+    right: 2%;
+    bottom: 2%;
+    border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50% ;
+}
+.task-box-popup,
+.task-list-popup,
+.task-edit-list-popup{
+    z-index: 2;
+    border: 5px solid #0d6efd;
+    display: none;
+}
+.task-box-popup h1,
+.task-list-popup h1{
+    color: aliceblue;
+    border-bottom: 5px solid aqua;
+    border-radius: 50%;
+}
+img{
+    border: 5px solid aqua;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 20rem;
+    width: 99%;   
+}
+i{
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+/* scrollbar code */
+/* width */
+.task-box ul::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .task-box ul::-webkit-scrollbar-track {
+    background: gray; 
+    border-radius: 20px;
+
+  }
+   
+  /* Handle */
+  .task-box ul::-webkit-scrollbar-thumb {
+    background: aqua; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .task-box ul::-webkit-scrollbar-thumb:hover {
+    background: #0d6efd; 
+  }

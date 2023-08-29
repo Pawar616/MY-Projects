@@ -1,0 +1,83 @@
+
+
+body {
+    background-image: url(../img/mario\ background.jpeg);
+}
+.mario img {
+    height: 8rem;
+    width: 8rem;
+
+
+}
+
+.Mtitle{
+    height: 21rem;
+    width: 43rem;
+    position: fixed;
+    top: 11rem;
+    left: 27rem;
+    opacity: 0;
+    animation-name: mbt;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+.mario{
+    position: relative;
+    animation-name: mb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes mbt{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes mb{
+    0%{
+        top:-4rem;
+        left: 1rem;
+    }
+    15%{
+        top:33rem;
+        left: 1rem;
+    }
+    30%{
+        top:33rem;
+        left: 30rem;
+    }
+    40%{
+        top:33rem;
+        left: 50rem;
+    }
+    45%{
+        top:18rem;
+        left: 53rem;
+    }
+    50%{
+        top:21rem;
+        left: 56rem;
+    }
+    60%{
+        top:21rem;
+        left: 70rem;
+    }
+    67%{
+        top:11rem;
+        left: 86rem;
+    }
+    75%{        
+        top:33rem;
+        left: 95rem;
+    }
+     
+} 
+

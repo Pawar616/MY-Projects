@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS PROG</title>
+  <style>
+    p[id^="ans"] {
+      background-color: aqua;
+    }
+
+    p span[id^="arr"] {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>js prgrams</h1>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>1) Write a JavaScript program to remove duplicate items from an array</p>
+  <p>first array: <span id="arr1"></span></p>
+  <p id="ans1"></p>
+
+  <script>
+            // let abc = ["a", "b", "c", "d", "d", "a", "s", "c"];
+
+            // let org = abc.filter((each, index) => {
+            //   return abc.indexOf(each) === index;
+            // });
+            // console.log(org);
+            // document.getElementById("arr1").innerHTML = abc;
+//             function separateOddEven(arr) {
+//   const odd = arr.filter(num => num % 2 !== 0);
+//   const even = arr.filter(num => num % 2 === 0);
+
+//   return {
+//     odd,
+//     even,
+//   };
+// }
+
+// // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const separatedNumbers = separateOddEven([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+ const arr =  [1, 2, 3, 4, 5, 6, 7, 8, 9];
+ const odd = arr.filter(num => num % 2 !== 0);
+ const even = arr.filter(num => num % 2 === 0);
+  console.log("odd",odd);
+  console.log("even",even);
+
+// console.log("Odd Numbers:", separatedNumbers.odd);
+// console.log("Even Numbers:", separatedNumbers.even);
+
+
+
+          </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>2) Write a JavaScript program to compute the sum of given array</p>
+  <p>first array: <span id="arr2"></span></p>
+  <p id="ans2"></p>
+
+  <script>
+    let num = [1, 2, 3, 4, 5];
+    function Sum(num) {
+      return num.reduce((total, current) => total + current, 0);
+    }
+    let sum = Sum(num);
+    // console.log(sum);
+    document.getElementById("arr2").innerHTML = num;
+
+    document.getElementById("ans2").innerHTML = sum;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    3) Write a JavaScript program to find duplicate values in a JavaScript
+    array
+  </p>
+  <p>first array: <span id="arr3"></span></p>
+  <p id="ans3"></p>
+
+  <script>
+    // let arr = ["a", "b", "c", "d", "d", "a", "s", "c"];
+
+    // let dub = arr.filter((item, index) => {
+    //   return arr.indexOf(item) !== index;
+    // });
+    // console.log(dub);
+    // document.getElementById("arr3").innerHTML = arr;
+
+    // document.getElementById("ans3").innerHTML = dub;
+    function fiveCharactersOrFewerOnly(arr) {
+      return arr.filter(function (in) {
+        return in.length < 6;
+      });
+    }
+    // test
+    console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "camping"])); // ["by", "dog", "wolf", "eaten"]
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    4) Write a JavaScript program to find a pair of elements (indices of the
+    two numbers) in a given array whose sum equals a specific target number.
+  </p>
+  <p>first array: <span id="arr4"></span></p>
+  <p id="ans4"><span id="ans4_1"></span>,<span id="ans4_2"></span></p>
+  <script>
+    let number = [10, 20, 10, 30, 20, 60, 70];
+    let start = number[0];
+    let end = number[2];
+    for (i = 0; i < number.length - 2; i++) {
+      for (j = 2; j < number.length; j++) {
+        if (number[i] + number[j] !== 50) {
+          start = number[i];
+          end = number[j];
+        } else {
+          start = number[i];
+          end = number[j];
+          // console.log(start, end);
+          document.getElementById("arr4").innerHTML = number;
+          document.getElementById("ans4_1").innerHTML = end;
+          document.getElementById("ans4_2").innerHTML = start;
+        }
+      }
+    }
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    5) Write a JavaScript program to find the longest substring in a set of
+    strings.
+  </p>
+  <p>first array: <span id="arr5"></span></p>
+  <p id="ans5"></p>
+  <script>
+    let myarr = ["IronMan", "CaptainAmerica", "Thor", "Hulk"];
+    let long_str = myarr[0];
+    //  console.log(lgstrg);
+    for (i = 0; i < myarr.length; i++) {
+      if (myarr[i].length > long_str.length) {
+        long_str = myarr[i];
+      }
+    }
+    document.getElementById("arr5").innerHTML = myarr;
+    document.getElementById("ans5").innerHTML = long_str;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    6) Write a JavaScript program that merges two arrays and removes all
+    duplicate elements.
+  </p>
+  <p>first array: <span id="arr6"></span></p>
+  <p>second array: <span id="arr6_2"></span></p>
+
+  <p id="ans6"></p>
+
+  <script>
+    let array1 = [1, 2, 5, 3];
+    let array2 = [4, 5, 2, 6];
+    let arry3 = array1.concat(array2);
+
+    let orgarr = arry3.filter((each, index) => {
+      return arry3.indexOf(each) === index;
+    });
+    console.log(org);
+    document.getElementById("arr6").innerHTML = array1;
+    document.getElementById("arr6_2").innerHTML = array2;
+
+    document.getElementById("ans6").innerHTML = orgarr;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    7) Write a JavaScript program to remove a specific element from an array.
+  </p>
+  <p>first array: <span id="arr7"></span></p>
+  <p id="ans7"></p>
+  <script>
+    let avengers = ["IronMan", "CaptainAmerica", "Thor", "Hulk"];
+    // console.log(avengers);
+    document.getElementById("arr7").innerHTML = avengers;
+
+    // Remove hulk
+    avengers.splice(3, 1);
+    // console.log(avengers);
+    document.getElementById("ans7").innerHTML = avengers;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    8) Write a JavaScript program to find an array containing a specific
+    element.
+  </p>
+  <p>first array: <span id="arr8"></span></p>
+  <p id="ans8"></p>
+
+  <script>
+    let pokemon = ["Pikachu", "Blastoise", "Charmander", "Bulbasaur"];
+    // document.getElementById("demo").innerHTML = fruits.includes("Mango");
+    let uniqe = pokemon.includes("Pikachu");
+    console.log(uniqe);
+    document.getElementById("arr8").innerHTML = pokemon;
+    document.getElementById("ans8").innerHTML = uniqe;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>9) Write a JavaScript program to get the largest element from array</p>
+
+  <p>first array: <span id="arr9"></span></p>
+  <p id="ans9"></p>
+  <script>
+    let lgarr = [101, 201, 365, 521, 33, 21, 56];
+    let lgnumber = lgarr[0];
+    for (let i = 0; i < lgarr.length; i++) {
+      if (lgarr[i] > lgnumber) {
+        lgnumber = lgarr[i];
+      }
+    }
+    console.log(lgnumber);
+    document.getElementById("ans9").innerHTML = lgnumber;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    10) Write a JavaScript program to filter false, null, 0 and blank values
+    from an array.
+  </p>
+  <p>first array: <span id="arr10"></span></p>
+  <p id="ans10"></p>
+  <script>
+    let arrayinput = [false, null, 0, "", "pawar", "prathamesn", "max", 616];
+    function filterinputs(arrayinput) {
+      return arrayinput.filter((inputs) => {
+        return (
+          inputs !== false && inputs !== null && inputs !== 0 && inputs !== ""
+        );
+      });
+    }
+    let ans = filterinputs(arrayinput);
+    console.log(ans);
+    document.getElementById("arr10").innerHTML = arrayinput;
+    document.getElementById("ans10").innerHTML = ans;
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+  <p>
+    11) Write a JavaScript program that takes an array of integers and returns
+    false if every number is not prime. Otherwise, return true.
+  </p>
+
+  <p>first array: <span id="arr11"></span></p>
+  <p id="ans11"></p>
+  <script>
+    let prime = [2, 6, 8, 16, 10];
+    document.getElementById("arr11").innerHTML = prime;
+    document.getElementById("ans11").innerHTML = prime.every(check);
+    function check(num) {
+      return num % 2 === 0;
+    }
+  </script>
+  <p>
+    ..................................................................................................................................................
+  </p>
+</body>
+
+</html>

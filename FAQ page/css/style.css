@@ -1,0 +1,35 @@
+.btnadd{
+    position: relative;
+    left: 63%;
+    box-shadow: -3px 3px 5px white;
+}
+.addfaq{
+    position: absolute;
+    left: 21%;
+    z-index: 5;
+    opacity: 90%;
+    display: none;
+}
+.faq div h1{
+    display: flex;
+}
+.info img{
+    height: 30vh;
+    width: 50%; 
+}
+.faq div h1 i{
+    float: right;
+}
+.info {
+    display: none ;
+}
+.active{
+    background-color: orangered;
+}
+.logo{
+    background-image: url(../img/stamp.png);
+    width: 36px;
+    height: 40px;
+    background-size: cover;
+    
+}

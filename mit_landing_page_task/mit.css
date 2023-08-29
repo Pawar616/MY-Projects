@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+}
+#logo{
+    list-style-type: none;
+    /* float: left; */
+    display: flex;
+    width: 100%;
+}
+#links{
+    text-align:right;
+    list-style-type: none;
+    padding-left:50rem;
+    float: right;
+    margin-top: 4%;
+    
+}
+a{
+    color: black; text-decoration: none;
+}
+.box1{
+    /* width: 1520px; */
+    width: 100%;
+    min-height: 500px;
+    background-image: url(./mit_img/background-1.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.box1-1 button{
+    background-color: #dad4f3cc;
+    border: none;
+    display: flex;
+    align-items: center;
+    width:250px;
+    height:60px;
+    color:#192b65;
+    font-weight: bold;
+    border-radius: 5%;
+    
+}
+.box1-1{
+    padding-left: 15%;
+    padding-top: 05%;
+}
+h1{
+    color:#192b65;
+    margin: 2px;
+}
+h3{
+    margin: 2px;
+    color: aliceblue;
+}
+.box3{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+#info_form{
+    background-color:skyblue;
+    margin: 0% 20% 0% ; 
+    text-align: center;
+    color: aliceblue;
+    width: 60%;
+    position: absolute;
+    top: 70%;
+}
+#name, #mobno, #loc, #email, #prog{
+    border: none;
+    width: 25%;
+    padding: 10px 20px;
+}
+#check{
+    margin: 0px !important;
+}
+button{
+    border: none;
+    width: 30%;
+    color: white;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    background-color:#192b65;
+     
+}
+.box4{
+    padding-left: 18%;
+    padding-right: 18%;
+    background-color:lightseagreen;
+}
+.box4-1{
+
+    margin: auto;
+    background-color:white;
+    width: 55%;
+    border: 20px solid lightseagreen;
+}
+.span{
+    background-color: yellow;
+}
+table{
+    border-spacing: 10px;
+     border-collapse: collapse; 
+     text-align: center;
+     table-layout: fixed;
+     width: 100%;
+     color: aliceblue;
+     
+}
+.nobod{
+    border-right: none;
+}
+tr{
+
+    border: none;
+}
+td, th{
+    
+    border-right: solid 2px rgb(119, 111, 111);
+
+}
+.box5{
+    background-image: url(./mit_img/background-2.jpg);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-left:40% ;
+}
+ul{
+    color: aliceblue;
+    font-weight: bold;
+
+}
+.pocket{
+    background-color:rgb(58, 161, 239); 
+    position: absolute;
+    text-align: center;
+    width: 15%;   
+    left: 1200px;
+    top: 1480px;
+    border-radius: 5%;
+    color: aliceblue;
+}
+.pocket2{
+    background-color:rgb(58, 161, 239); 
+    position: absolute;
+    left: 1200px;
+    top: 1630px;
+    text-align: center;
+    width: 15%;
+    border-radius: 5%;
+    color: aliceblue;
+     
+}
+.box6{
+    color: black !important;
+}
+.box6{
+    width :100vw;
+    height:25rem;
+    background-color: white;   
+    display: flex;
+    padding: 2rem 5rem;
+}
+.box6 div{
+    width: 60%;
+    height: 50%;
+    line-height: 1.5rem;
+}
+.box6 img{
+    width: 30%;
+    height:100%;
+}
+.box6 ul, h3{
+    color:#192b65;
+}
+
+.box7{
+    width :100%;
+    height:35rem;
+    background-color:rgb(56, 56, 143);
+    padding: 2rem ;
+    text-align: center;
+    color: white;
+}
+.box7 .box7-1{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box7 .box7-1 div{
+    width: 23%;
+    height: 100%;
+    padding-top: .5rem;
+    background-color: white;
+}
+.box7 .box7-1 div img{
+    width: 10rem;
+    height: 10rem;
+}
+.box7-1 div h3, p{
+    color:rgb(6, 6, 91) ;
+}
+.box7-1 div h4{
+    color: gray;
+}
+.box7-1 div em{
+    font-size: 2rem;
+    color: skyblue;
+}
+.ceo{
+    width: 8rem;
+    height: 5rem;
+}
+.box8{
+    width :100%;
+    height:4rem;
+    background-color:#192b65;
+    display: flex;
+    justify-content: center;
+}
+.box8 p{
+    height: 80%;
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
